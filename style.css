@@ -80,8 +80,117 @@ body{
 .sociallinks ul .github:hover{
     background: #333;
 } 
-@media only screen and (max-width: 549px) {
-    .container{
-        width: 88vw;
-    }
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+        list-style: none;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+      
+      body {
+        background-image: url('images/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+      }
+      
+      .container {
+        width: 80%;
+        margin: 4em auto;
+      }
+      
+      .headsection img {
+        display: block;
+        margin: 0 auto;
+        height: 5rem;
+        width: 5rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      
+      .headsection h2 {
+        text-align: center;
+        margin-top: 13px;
+        font-size: 1.5em;
+        color: rgb(255 255 255);
+      }
+      
+      .sociallinks ul li {
+        width: 100%;
+        margin: 1.2rem 0;
+        padding: 0.4rem 0.8rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        transform-style: preserve-3d;
+        perspective: 500px;
+        box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.12);
+      }
+      
+      .js-tilt-glare {
+        border-radius: 5px;
+      }
+      
+      .sociallinks ul li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        font-size: 1rem;
+      }
+      
+      .sociallinks ul li a i {
+        text-align: center;
+        line-height: 4rem;
+        padding: 10px 20px;
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+        transform: scale(1.4) translateZ(50px);
+        transition: 0.25s;
+      }
+      
+      .sociallinks ul li a span {
+        line-height: 1.4rem;
+      }
+      
+      .sociallinks ul .instagram:hover {
+        background: #fd5949;
+      }
+      
+      .sociallinks ul .linkedin:hover {
+        background: #0a66c2;
+      }
+      
+      .sociallinks ul .github:hover {
+        background: #333;
+      }
+      
+      @media only screen and (min-width: 550px) {
+        .container {
+          width: 30em;
+        }
+      
+        .sociallinks ul li {
+          backdrop-filter: blur(0px);
+        }
+      
+        .sociallinks ul li:hover {
+          transform: rotateY(180deg);
+        }
+      
+        .sociallinks ul li:hover a i {
+          transform: scale(1) translateZ(0px);
+          box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.12),
+            0 0 1rem rgba(255, 255, 255, 0.24);
+        }
+      }
+      
   }
