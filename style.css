@@ -80,6 +80,9 @@ body{
 .sociallinks ul .github:hover{
     background: #333;
 }
+.sociallinks ul .blog:hover{
+  background: #007fff;
+}
 /* contact form*/
 input[type=text], select, textarea {
     width: 100%;
@@ -223,4 +226,9 @@ input[type=text], select, textarea {
         }
       }
       
+  }
+  .footer-container p {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
   }
